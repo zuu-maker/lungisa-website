@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const items = [
@@ -28,11 +28,33 @@ const items = [
 
 function Header() {
   const pathname = usePathname();
+  const [animate, setAnimate] = useState(false);
+
+  const scrollAnimation = () => {
+    const currentScroll = window.scrollY;
+    if (currentScroll >= 150) {
+      setAnimate(true);
+    } else {
+      setAnimate(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", scrollAnimation);
+
+    return () => {
+      window.removeEventListener("scroll", scrollAnimation);
+    };
+  }, [scrollAnimation]);
   return (
-    <nav className=" bg-neutral-950 z-10 top-0 left-0 w-full sticky px-48">
+    <nav className="top-0 left-0 z-50 w-full sticky px-48 bg-neutral-950 ">
       <div className="flex w-full h-full items-center justify-between">
-        <div className="h-24 p-2">
-          <img src="Transparent.png" className="h-full" />
+        <div
+          className={`${
+            animate ? "h-[64px] m-4 " : "h-[100px] m-2"
+          } duration-500`}
+        >
+          <img src="Transparent.png" className="h-full " />
         </div>
         <div>
           <ul className="text-[20px] leading-6 uppercase font-medium flex items-center space-x-6 text-gray-200 ">

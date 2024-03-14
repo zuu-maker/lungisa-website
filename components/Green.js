@@ -31,7 +31,7 @@ function Green() {
           </div>
         </div>
       </div>
-      <div className="flex items-center mt-[7.8rem] w-[1300px] justify-between">
+      <div className="flex items-center mt-[10rem] w-[1300px] justify-between">
         <p className="text-[18px] leading-[27px] text-center text-[#919191]">
           Copyright © 2024 Lungisa Solutions Ltd - All Rights Reserved.
         </p>
