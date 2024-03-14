@@ -7,7 +7,7 @@ import React from "react";
 
 function ContactUsPage() {
   return (
-    <div className="montserrat">
+    <div className="montserrat opacity-90">
       <Header />
       <ContactUs />
       <SendMessage />

@@ -1,4 +1,7 @@
 import React from "react";
+import { Archivo_Black } from "next/font/google";
+
+const archivo_black = Archivo_Black({ subsets: ["latin"], weight: "400" });
 
 function AboutUsHero() {
   return (
@@ -8,7 +11,7 @@ function AboutUsHero() {
     >
       <div className="w-[1280px] flex items-center flex-col justify-center">
         <h4 className="text-[#becbde] font-sans uppercase text-[42px] leading-[59px] mb-10">
-          LUNGISA SOLUTIONS LTD
+          <span className={archivo_black.className}>LUNGISA SOLUTIONS LTD</span>
         </h4>
         <div>
           <img className="w-full" src="Transparent.png" alt="" />

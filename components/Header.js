@@ -1,11 +1,13 @@
+"use client";
 import Link from "next/link";
 import React from "react";
+import { usePathname } from "next/navigation";
 
 const items = [
   {
     name: "home",
     link: "/",
-    page: "/",
+    page: "",
   },
   {
     name: "about us",
@@ -25,6 +27,7 @@ const items = [
 ];
 
 function Header() {
+  const pathname = usePathname();
   return (
     <nav className=" bg-neutral-950 z-10 top-0 left-0 w-full sticky px-48">
       <div className="flex w-full h-full items-center justify-between">
@@ -37,7 +40,8 @@ function Header() {
               <li
                 key={item.name}
                 className={`cursor-pointer hover:text-[#becbde] ${
-                  item.page === "/" && "border-b-2 text-[#becbde] "
+                  item.page === pathname.split("/")[1] &&
+                  "border-b-2 text-[#becbde] "
                 } `}
               >
                 <Link className="" href={item.link}>

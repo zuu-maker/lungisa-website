@@ -1,6 +1,9 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { Archivo_Black } from "next/font/google";
+
+const archivo_black = Archivo_Black({ subsets: ["latin"], weight: "400" });
 
 const images = [
   {
@@ -21,7 +24,7 @@ function Gallery() {
   return (
     <div className="px-48 pt-8 flex flex-col items-center justify-center space-y-10 text-center bg-neutral-950">
       <h4 className="text-[#becbde] font-sans uppercase text-[42px] leading-[59px] ">
-        Photo Gallery
+        <span className={archivo_black.className}> Photo Gallery</span>
       </h4>
 
       <ImageGallery

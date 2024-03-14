@@ -30,7 +30,7 @@ function SendMessage() {
           className="block w-full h-14 text-sm text-gray-50  px-2 cursor-pointer bg-neutral-900  focus:outline-none"
           type="text"
           name="address"
-          placeholder="Address"
+          placeholder="Address (Street, City, Zip Code)"
         />
         <textarea
           rows={8}

@@ -1,10 +1,13 @@
 import React from "react";
+import { Archivo_Black } from "next/font/google";
+
+const archivo_black = Archivo_Black({ subsets: ["latin"], weight: "400" });
 
 function Team() {
   return (
     <div className="text-center pt-10 pb-8 px-48 ">
       <h4 className="text-[#becbde] uppercase text-[42px] leading-[59px]">
-        our Team
+        <span className={archivo_black.className}>our Team</span>
       </h4>
       <div className="flex items-center space-x-6">
         <div className="flex-1 py-8">

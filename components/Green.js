@@ -1,11 +1,14 @@
 import React from "react";
+import { Archivo_Black } from "next/font/google";
+
+const archivo_black = Archivo_Black({ subsets: ["latin"], weight: "400" });
 
 function Green() {
   return (
     <div className="py-14 h-full px-48  bg-neutral-950">
       <div className="flex flex-col items-center space-y-16 text-center">
         <h4 className="uppercase text-[42px] leading-[59px] text-[#becbde]">
-          Our Green commitment
+          <span className={archivo_black.className}>Our Green commitment</span>
         </h4>
         <div className="flex items-center space-x-6 ">
           <div className="flex-1 flex flex-col  space-y-6">
