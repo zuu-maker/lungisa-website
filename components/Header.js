@@ -51,11 +51,11 @@ function Header() {
     };
   }, [scrollAnimation]);
   return (
-    <nav className="top-0 left-0 z-50 w-full sticky px-6 lg:px-20 xl:px-48 bg-neutral-950 ">
+    <nav className="top-0 left-0 z-50 w-full sticky px-4 lg:px-20 xl:px-48 bg-neutral-950 ">
       <div className="flex w-full h-full items-center justify-between">
         <div
           className={`${
-            animate ? "h-[64px] m-4 " : "h-[100px] m-2"
+            animate ? "h-[64px] my-4 " : "h-[100px] m-2"
           } duration-500`}
         >
           <img src="Transparent.png" className="h-full " />
