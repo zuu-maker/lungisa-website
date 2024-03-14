@@ -2,6 +2,9 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import { Dialog } from "@headlessui/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/outline";
 
 const items = [
   {
@@ -29,10 +32,11 @@ const items = [
 function Header() {
   const pathname = usePathname();
   const [animate, setAnimate] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const scrollAnimation = () => {
     const currentScroll = window.scrollY;
-    if (currentScroll >= 150) {
+    if (currentScroll >= 80) {
       setAnimate(true);
     } else {
       setAnimate(false);
@@ -47,7 +51,7 @@ function Header() {
     };
   }, [scrollAnimation]);
   return (
-    <nav className="top-0 left-0 z-50 w-full sticky px-48 bg-neutral-950 ">
+    <nav className="top-0 left-0 z-50 w-full sticky px-6 lg:px-20 xl:px-48 bg-neutral-950 ">
       <div className="flex w-full h-full items-center justify-between">
         <div
           className={`${
@@ -56,8 +60,18 @@ function Header() {
         >
           <img src="Transparent.png" className="h-full " />
         </div>
-        <div>
-          <ul className="text-[20px] leading-6 uppercase font-medium flex items-center space-x-6 text-gray-200 ">
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            className="sm:-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-50"
+            onClick={() => setMobileMenuOpen(true)}
+          >
+            <span className="sr-only">Open main menu</span>
+            <Bars3Icon className="h-7 w-7" aria-hidden="true" />
+          </button>
+        </div>
+        <div className="hidden lg:block">
+          <ul className="text-[20px] flex leading-6 uppercase font-medium items-center space-x-6 text-gray-200 ">
             {items.map((item) => (
               <li
                 key={item.name}

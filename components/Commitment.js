@@ -2,13 +2,13 @@ import React from "react";
 
 function Commitment() {
   return (
-    <section className="px-48 pb-12 mt-4">
-      <div className="flex items-center space-x-6 text-center">
+    <section className="px-4 md:px-20 xl:px-48 pt-12">
+      <div className="flex flex-col md:flex-row items-center md:space-x-6">
         <div className="flex-1">
           <img className="h-64 w-full object-cover" src="reliable.jpg" alt="" />
         </div>
-        <div className="text-center flex flex-col flex-1 items-center">
-          <h4 className="mb-6 text-[#e2e2e2] leading-6 text-[24px] font-normal break-words">
+        <div className="text-center mt-8 md:mt-0 flex flex-col flex-1 items-center">
+          <h4 className="mb-6 text-[#e2e2e2] text-center leading-6 text-[24px] font-normal break-words">
             Customer Satisfaction: Our Commitment
           </h4>
           <p className="text-[18px] leading-[27px] text-[#919191]">

@@ -11,10 +11,10 @@ function Hero() {
           alt=""
         />
       </div>
-      <div className="px-48 py-12 bg-zinc-950">
+      <div className="px-6 lg:px-20 xl:px-48 py-12 bg-zinc-950">
         <img
           style={{
-            minWidth: 1024,
+            // minWidth: 1024,
             objectFit: "cover",
             aspectRatio: 1.4979520187244002 / 1,
           }}
