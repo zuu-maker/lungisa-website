@@ -21,7 +21,7 @@ function Green() {
               environmental impact.
             </p>
           </div>
-          <div className="flex-1 flex flex-col  space-y-6">
+          <div className="flex-1 flex flex-col mt-6 md:mt-0  space-y-6">
             <img className="object-cover" src="member.webp" alt="" />
             <p className="text-[#a4a4a4] break-words text-[18px] h-24 leading-[27px] text-center">
               In line with our commitment to environmentally sustainable
