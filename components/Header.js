@@ -98,8 +98,8 @@ function Header() {
           <div className="flex h-9 items-center justify-between">
             <div className="flex">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Sirius Education Trust</span>
-                <img className="h-14" src="/logo.png" alt="" />
+                <span className="sr-only">Lungisa</span>
+                <img className="h-14" src="/Transparent.png" alt="" />
               </a>
             </div>
             <div className="flex">
