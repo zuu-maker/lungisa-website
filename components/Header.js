@@ -55,7 +55,7 @@ function Header() {
       <div className="flex w-full h-full items-center justify-between">
         <div
           className={`${
-            animate ? "h-[64px] my-4 " : "h-[100px] m-2"
+            animate ? "h-[48px] my-4 " : "h-[80px] md:h-[100px] m-2"
           } duration-500`}
         >
           <img src="Transparent.png" className="h-full " />
