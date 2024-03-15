@@ -4,7 +4,7 @@ import { Archivo_Black } from "next/font/google";
 
 const montserrat_init = Montserrat({
   subsets: ["latin"],
-  weight: ["200", "400"],
+  weight: ["200", "400", "700"],
   variable: "--font-montserrat",
 });
 
