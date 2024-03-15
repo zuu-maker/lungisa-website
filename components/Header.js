@@ -52,7 +52,7 @@ function Header() {
   }, [scrollAnimation]);
   return (
     <React.Fragment>
-      <nav className="top-0 left-0 z-50 w-full sticky px-4 lg:px-20 xl:px-48 bg-neutral-950 ">
+      <nav className="top-0 left-0 z-40 w-full sticky px-4 lg:px-20 xl:px-48 bg-neutral-950 ">
         <div className="flex w-full h-full items-center justify-between">
           <div
             className={`${
@@ -93,7 +93,7 @@ function Header() {
       <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
         <Dialog.Panel
           focus="true"
-          className="fixed inset-0 z-10 overflow-y-auto bg-neutral-950 text-white px-6 py-6 lg:hidden"
+          className="fixed inset-0 z-50 overflow-y-auto bg-neutral-950 text-white px-6 py-6 lg:hidden"
         >
           <div className="flex h-9 items-center justify-between">
             <div className="flex">
