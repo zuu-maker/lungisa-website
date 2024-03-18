@@ -81,7 +81,7 @@ function Header() {
                     "border-b-2 text-[#becbde] "
                   } `}
                 >
-                  <Link className="" href={item.link}>
+                  <Link prefetch={false} href={item.link}>
                     {item.name}
                   </Link>
                 </li>
