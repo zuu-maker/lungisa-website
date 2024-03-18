@@ -6,10 +6,10 @@ const archivo_black = Archivo_Black({ subsets: ["latin"], weight: "400" });
 function Team() {
   return (
     <div className="text-center pt-6 lg:pt-10 pb-8 px-4 lg:px-20 xl:px-48 ">
-      <h4 className="text-[#becbde] uppercase text-[28px] lg:text-[42px] leading-[59px]">
+      <h4 className="text-[#becbde] pb-6 uppercase text-[28px] lg:text-[42px] leading-[59px]">
         <span className={archivo_black.className}>our Team</span>
       </h4>
-      <div className="flex flex-col lg:flex-row items-center md:space-y-4 lg: lg:space-x-6">
+      <div className="flex flex-col lg:flex-row items-center space-y-8 md:space-y-4 lg: lg:space-x-6">
         <div className="flex-1 ">
           <img className="aspect-video object-cover" src="maambwe.jpg" alt="" />
           <div className="mt-3 flex flex-col justify-center space-y-3 lg:space-y-6">

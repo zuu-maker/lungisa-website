@@ -7,7 +7,7 @@ function Green() {
   return (
     <div className="py-8 lg:py-14 h-full px-4 lg:px-20  xl:px-48  bg-neutral-950">
       <div className="flex flex-col items-center space-y-5 lg:space-y-10 xl:space-y-16 text-center">
-        <h4 className="uppercase text-[28px] lg:text-[38px] xl:text-[42px] leading-[59px] text-[#becbde]">
+        <h4 className="uppercase leading-[39px] text-[28px] lg:text-[38px] xl:text-[42px] lg:leading-[59px] text-[#becbde]">
           <span className={archivo_black.className}>Our Green commitment</span>
         </h4>
         <div className="flex flex-col lg:flex-row items-center space-y-28 md:space-y-6 lg:space-x-6 ">

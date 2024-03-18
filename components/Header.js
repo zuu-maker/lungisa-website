@@ -120,7 +120,7 @@ function Header() {
                   <p key={item.name}>
                     <Link
                       href={item.link}
-                      className={`inline-block capitalize rounded-lg px-3 text-sm  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
+                      className={`inline-block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
                         item.page === pathname.split("/")[1]
                           ? " text-white font-bold"
                           : "text-gray-50"

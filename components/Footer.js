@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div
       style={{ height: "55vh" }}
-      className="px-2 py-10 md:p-14 flex flex-col items-center  bg-neutral-950"
+      className="px-2 py-10 md:p-14 flex flex-col items-center bg-neutral-950"
     >
       <h4
         style={{ fontFamily: "sans-serif" }}
@@ -30,7 +30,7 @@ function Footer() {
         </div>
       </form>
 
-      <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row items-center mt-8 md:mt-20 lg:mt-36 pb-20 w-full justify-between bg-neutral-950">
+      <div className="flex flex-col space-y-8 lg:space-y-0 lg:flex-row items-center pt-8 md:pt-20 lg:pt-36 pb-20 w-full justify-between bg-neutral-950">
         <p className="text-[16px] md:text-[18px] leading-[27px] text-center text-[#919191]">
           Copyright © 2024 Lungisa Solutions Ltd - All Rights Reserved.
         </p>
