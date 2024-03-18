@@ -117,18 +117,17 @@ function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 montserrat">
                 {items.map((item) => (
-                  <p key={item.name}>
-                    <Link
-                      href={item.link}
-                      className={`inline-block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
-                        item.page === pathname.split("/")[1]
-                          ? " text-white font-bold"
-                          : "text-gray-50"
-                      } `}
-                    >
-                      {item.name}
-                    </Link>
-                  </p>
+                  <Link
+                    key={item.name}
+                    href={item.link}
+                    className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
+                      item.page === pathname.split("/")[1]
+                        ? " text-white font-bold"
+                        : "text-gray-50"
+                    } `}
+                  >
+                    {item.name}
+                  </Link>
                 ))}
               </div>
             </div>
