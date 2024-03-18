@@ -116,19 +116,48 @@ function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6 montserrat">
-                {items.map((item) => (
-                  <Link
-                    key={item.name}
-                    href={item.link}
-                    className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
-                      item.page === pathname.split("/")[1]
-                        ? " text-white font-bold"
-                        : "text-gray-50"
-                    } `}
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                {/* {items.map((item) => ( */}
+                <Link
+                  href="/"
+                  className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
+                    "" === pathname.split("/")[1]
+                      ? " text-white font-bold"
+                      : "text-gray-50"
+                  } `}
+                >
+                  Home
+                </Link>
+                <Link
+                  href="/about-us"
+                  className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
+                    "about-us" === pathname.split("/")[1]
+                      ? " text-white font-bold"
+                      : "text-gray-50"
+                  } `}
+                >
+                  About Us
+                </Link>
+                <Link
+                  href="/gallery"
+                  className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
+                    "gallery" === pathname.split("/")[1]
+                      ? " text-white font-bold"
+                      : "text-gray-50"
+                  } `}
+                >
+                  gallery
+                </Link>
+                <Link
+                  href="/contact-us"
+                  className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
+                    "contact-us" === pathname.split("/")[1]
+                      ? " text-white font-bold"
+                      : "text-gray-50"
+                  } `}
+                >
+                  Contact Us
+                </Link>
+                {/* ))} */}
               </div>
             </div>
           </div>
