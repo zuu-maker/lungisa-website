@@ -119,6 +119,7 @@ function Header() {
                 {/* {items.map((item) => ( */}
                 <Link
                   href="/"
+                  prefetch={false}
                   className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
                     "" === pathname.split("/")[1]
                       ? " text-white font-bold"
@@ -129,6 +130,7 @@ function Header() {
                 </Link>
                 <Link
                   href="/about-us"
+                  prefetch={false}
                   className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
                     "about-us" === pathname.split("/")[1]
                       ? " text-white font-bold"
@@ -139,6 +141,7 @@ function Header() {
                 </Link>
                 <Link
                   href="/gallery"
+                  prefetch={false}
                   className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
                     "gallery" === pathname.split("/")[1]
                       ? " text-white font-bold"
@@ -149,6 +152,7 @@ function Header() {
                 </Link>
                 <Link
                   href="/contact-us"
+                  prefetch={false}
                   className={`block capitalize rounded-lg px-3 text-base  leading-6 text-gray-50 shadow-sm ring-1 ring-gray-100/10 hover:ring-gray-100/20${
                     "contact-us" === pathname.split("/")[1]
                       ? " text-white font-bold"
