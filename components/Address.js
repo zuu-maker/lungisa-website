@@ -11,12 +11,15 @@ function Address() {
           Plot 2303P, Twin Palms Road, Ibex Hill, Lusaka, Zambia
         </p>
         <div className="text-[#becbde] text-[16px] xl:text-[20px] leading-[27px] flex items-center space-x-4">
-          <p>+260772331839 </p>
-          <p>+260769365437</p>
+          <a href="tel:+260772331839">+260772331839 </a>
+          <a href="tel:+260769365437">+260769365437</a>
         </div>
-        <p className="text-[#becbde] text-[16px] xl:text-[20px] leading-[27px]">
+        <a
+          href="mailto:info@lungisasolutions.com"
+          className="text-[#becbde] text-[16px] xl:text-[20px] leading-[27px]"
+        >
           info@lungisasolutions.com
-        </p>
+        </a>
       </div>
       <div className="flex flex-col items-center space-y-6">
         <h6 className="text-[22px] xl:text-[32px] leading-[28px] xl:leading-[30px] text-[#e2e2e2]">

@@ -10,7 +10,16 @@ function ContactUs() {
       <h4 className="text-[#ffffff]  w-2/3 lg:w-full absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center z-20 opacity-100 uppercase text-[28px] md:text-[33px] xl:text-[42px] xl:leading-[59px] ">
         <span className={archivo_black.className}>Contact us today</span>
       </h4>
-      <img className="object-cover w-full h-[23vh]" src="contact2.jpg" alt="" />
+      <img
+        className="object-cover lg:hidden w-full h-[23vh]"
+        src="contact2.jpg"
+        alt=""
+      />
+      <img
+        className="object-cover lg:block hidden w-full h-[23vh]"
+        src="contact.png"
+        alt=""
+      />
     </div>
   );
 }
