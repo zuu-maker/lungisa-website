@@ -74,17 +74,17 @@ function Header() {
           <div className="hidden lg:block">
             <ul className="text-[20px] flex leading-6 uppercase font-medium items-center space-x-6 text-gray-200 ">
               {items.map((item) => (
-                <li
+                <Link
                   key={item.name}
                   className={`cursor-pointer hover:text-[#becbde] ${
                     item.page === pathname.split("/")[1] &&
                     "border-b-2 text-[#becbde] "
                   } `}
+                  prefetch={false}
+                  href={item.link}
                 >
-                  <Link prefetch={false} href={item.link}>
-                    {item.name}
-                  </Link>
-                </li>
+                  {item.name}
+                </Link>
               ))}
             </ul>
           </div>
